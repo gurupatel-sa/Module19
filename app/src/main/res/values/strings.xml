@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SensorDemo</string>
+    <string name="capture">Capture</string>
+    <string name="camera_example">Camera Example</string>
+    <string name="camerax_example">CameraX Example</string>
+    <string name="gyroscope_example">Gyroscope Example</string>
+    <string name="proximity_example">Proximity Example</string>
+    <string name="gyroscope_instruction">Tilt your Phone to Right/Left direction</string>
+    <string name="proximity_sensor">Put your finger on proximity sensor to Turn On/Off Screen</string>
+    <string name="light_intensity">Light Intensity %f</string>
+</resources>
