@@ -13,7 +13,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.camera.core.*
 import kotlinx.android.synthetic.main.activity_camerax_example.*
-import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 
 class CameraxExample : AppCompatActivity() {

@@ -13,14 +13,14 @@ import android.widget.Toast
 import android.os.PowerManager
 
 class ProximitySensorExample : AppCompatActivity(), SensorEventListener {
-    val TAG: String = this.javaClass.getSimpleName()
-    val SAMPLING_PERIOD = 2 * 1000 * 1000
+    private val TAG: String = this.javaClass.getSimpleName()
+    private val SAMPLING_PERIOD = 2 * 1000 * 1000
 
-    var sensorManager: SensorManager? = null
-    var proximitySensor: Sensor? = null
-    var field: Int? = null
-    var powerManager: PowerManager? = null
-    var wakeLock: PowerManager.WakeLock? = null
+    private var sensorManager: SensorManager? = null
+    private var proximitySensor: Sensor? = null
+    private var field: Int? = null
+    private var powerManager: PowerManager? = null
+    private var wakeLock: PowerManager.WakeLock? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_proximity_sensor_example)

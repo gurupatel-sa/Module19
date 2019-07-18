@@ -10,7 +10,6 @@ import android.os.Bundle
 import android.hardware.SensorManager
 import android.util.Log
 import android.widget.Toast
-import android.os.PowerManager
 
 class GyroscopeExample : AppCompatActivity(), SensorEventListener {
     private val TAG: String = this.javaClass.getSimpleName()

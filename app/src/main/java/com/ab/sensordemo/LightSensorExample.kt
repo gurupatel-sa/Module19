@@ -1,6 +1,5 @@
 package com.ab.sensordemo
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -9,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.hardware.SensorManager
 import android.util.Log
-import android.widget.Toast
-import android.os.PowerManager
 import kotlinx.android.synthetic.main.activity_light_sensor_example.*
 
 class LightSensorExample : AppCompatActivity(), SensorEventListener {
@@ -48,7 +45,6 @@ class LightSensorExample : AppCompatActivity(), SensorEventListener {
     override fun onPause() {
         super.onPause()
         Log.d(TAG, "onPause")
-
     }
 
     override fun onStop() {
@@ -68,8 +64,6 @@ class LightSensorExample : AppCompatActivity(), SensorEventListener {
 
     override fun onSensorChanged(sensorEvent: SensorEvent?) {
         Log.d(TAG, "onSensorChanged : "+ sensorEvent?.values!![0].toString())
-
         txt_sensor.setText(getString(R.string.light_intensity ,sensorEvent?.values!![0]))
-
     }
 }
